@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Nền của thẻ -->
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M2,4h20c1.1,0 2,0.9 2,2v12c0,1.1 -0.9,2 -2,2H2c-1.1,0 -2,-0.9 -2,-2V6c0,-1.1 0.9,-2 2,-2z" />
+
+    <!-- Viền trên -->
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M2,8h20v2H2V8z" />
+
+    <!-- Chữ MEMBER -->
+    <group
+        android:translateX="4"
+        android:translateY="16">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M0,0h16v2H0z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M2,0v-2h2v2h-2z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M5,0v-2h2v2h-2z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M8,0v-2h2v2h-2z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M11,0v-2h2v2h-2z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M14,0v-2h2v2h-2z" />
+    </group>
+
+</vector>
