@@ -102,5 +102,14 @@ public class OtpSignUpFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         useCase.cancelTimer();
+        otpEditText = null;
+        timerTextView = null;
+        resendTextView = null;
+        backToSignUpTextView = null;
+        verifyButton = null;
+        if (verifyButton != null) verifyButton.setOnClickListener(null);
+        if (resendTextView != null) resendTextView.setOnClickListener(null);
+        if (backToSignUpTextView != null) backToSignUpTextView.setOnClickListener(null);
+        useCase = null;
     }
 }

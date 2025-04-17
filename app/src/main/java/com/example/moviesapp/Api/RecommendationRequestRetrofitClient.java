@@ -9,7 +9,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RecommendationRequestRetrofitClient {
-    private static final String BASE_URL = "http://192.168.1.3:4000/"; // Thay đổi nếu cần
+    private static final String BASE_URL = "http://192.168.32.101:3000/"; // Thay đổi nếu cần
     private static ApiRCM apiService;
 
     public static ApiRCM getApiService() {

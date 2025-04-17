@@ -86,4 +86,19 @@ public class SignupFragment extends Fragment {
             Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
         }
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        usernameEditText = null;
+        passwordEditText = null;
+        emailEditText = null;
+        fullNameEditText = null;
+        phoneEditText = null;
+        signupButton = null;
+        loginTextView = null;
+        if (signupButton != null) signupButton.setOnClickListener(null);
+        if (loginTextView != null) loginTextView.setOnClickListener(null);
+        useCase = null;
+    }
 }

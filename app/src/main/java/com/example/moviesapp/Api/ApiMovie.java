@@ -19,7 +19,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ApiMovie {
-    String BASE_URL = "http://192.168.1.3:4000/"; // Địa chỉ server Node.js của bạn
+    String BASE_URL = "http://192.168.32.101:3000/"; // Địa chỉ server Node.js của bạn
 
     Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
 

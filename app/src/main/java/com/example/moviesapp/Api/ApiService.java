@@ -1,6 +1,7 @@
 package com.example.moviesapp.Api;
 
 import com.example.moviesapp.data.model.ChangePasswordRequest;
+import com.example.moviesapp.data.model.LogoutRequest;
 import com.example.moviesapp.data.model.OtpRequest;
 import com.example.moviesapp.data.model.User;
 import retrofit2.Call;
@@ -22,6 +23,9 @@ public interface ApiService {
 
     @POST("/api/secure-auth/change-password-secure")
     Call<ApiResponse> changePasswordSecure(@Header("Authorization") String token, @Body ChangePasswordRequest payload);
+
+    @POST("/api/auth/signout")
+    Call<ApiResponse> logout(@Header("Authorization") String authHeader, @Body LogoutRequest request);
 
     @POST("/api/otp/send-otp")
     Call<ApiResponse> sendOtp(@Body OtpRequest payload);

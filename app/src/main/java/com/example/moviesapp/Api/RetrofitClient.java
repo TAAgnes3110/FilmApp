@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class RetrofitClient {
     private static volatile Retrofit retrofit;
-    private static String BASE_URL = "http://192.168.32.102:3000/";
+    private static String BASE_URL = "http://192.168.32.101:3000/";
 
     public static void setBaseUrl(String url) {
         BASE_URL = url;

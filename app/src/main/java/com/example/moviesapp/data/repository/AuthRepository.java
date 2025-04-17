@@ -7,6 +7,7 @@ import com.example.moviesapp.Api.ApiResponse;
 import com.example.moviesapp.Api.RetrofitClient;
 import com.example.moviesapp.data.model.OtpRequest;
 import com.example.moviesapp.data.model.User;
+import com.example.moviesapp.data.model.LogoutRequest;
 import com.google.gson.Gson;
 
 import retrofit2.Call;
@@ -144,6 +145,28 @@ public class AuthRepository {
                     callback.onSuccess(apiResponse.getStatus(), apiResponse.getMessage());
                 } else {
                     callback.onFailure("Password change failed: HTTP " + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ApiResponse> call, Throwable t) {
+                callback.onFailure(t.getMessage());
+            }
+        });
+    }
+
+    public void logout(Activity activity, String userId, String token, ApiCallback callback) {
+        String authHeader = "Bearer " + token;
+        Call<ApiResponse> call = RetrofitClient.getApiService(activity).logout(authHeader, new LogoutRequest(userId, token));
+        call.enqueue(new Callback<ApiResponse>() {
+            @Override
+            public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+                Log.d(TAG, "Logout response code: " + response.code());
+                if (response.isSuccessful() && response.body() != null) {
+                    ApiResponse apiResponse = response.body();
+                    callback.onSuccess(apiResponse.getStatus(), apiResponse.getMessage());
+                } else {
+                    callback.onFailure("Logout failed. (HTTP " + response.code() + ")");
                 }
             }
 

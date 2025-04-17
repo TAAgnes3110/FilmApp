@@ -83,4 +83,14 @@ public class ChangePasswordFragment extends Fragment {
             Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
         }
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        editTextNewPassword = null;
+        editTextConfirmPassword = null;
+        btnChangePassword = null;
+        if (btnChangePassword != null) btnChangePassword.setOnClickListener(null);
+        useCase = null;
+    }
 }

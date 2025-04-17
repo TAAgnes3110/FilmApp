@@ -116,5 +116,15 @@ public class OtpForgetPasswordFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         useCase.cancelTimer();
+        editTextEmail = null;
+        editTextOTP = null;
+        textViewResendTime = null;
+        textViewBackLog = null;
+        buttonSendOtp = null;
+        buttonVerify = null;
+        if (buttonSendOtp != null) buttonSendOtp.setOnClickListener(null);
+        if (buttonVerify != null) buttonVerify.setOnClickListener(null);
+        if (textViewBackLog != null) textViewBackLog.setOnClickListener(null);
+        useCase = null;
     }
 }

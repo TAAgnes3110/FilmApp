@@ -51,6 +51,7 @@ public class LoginUseCase {
                 .putString("username", user.getUserName() != null ? user.getUserName() : "")
                 .putString("userId", String.valueOf(user.getUserId()))
                 .putString("userEmail", user.getEmail() != null ? user.getEmail() : "")
+                .putString("userFullname", user.getFullName() != null ? user.getFullName() : "")
                 .apply();
     }
 }
