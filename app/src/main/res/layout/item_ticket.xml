@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/movieNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phim: Avengers"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/showDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày chiếu: 13/04/2025"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/showTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giờ chiếu: 10:00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/seatsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ghế: [A1, A2]"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/bookingTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời gian đặt: 12/04/2025 15:30:00"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "716279596792",
+    "project_id": "testapi-75b00",
+    "storage_bucket": "testapi-75b00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716279596792:android:8947765457b33686839d0d",
+        "android_client_info": {
+          "package_name": "com.example.moviesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIcQvWyfEhY3H7mJrLiUXPClaIISwvLHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

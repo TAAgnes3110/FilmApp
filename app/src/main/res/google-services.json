@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "967711104627",
+    "project_id": "cgv-app-9a9a1",
+    "storage_bucket": "cgv-app-9a9a1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967711104627:android:9dcb42d5451dc4e2661406",
+        "android_client_info": {
+          "package_name": "build.gradle.kts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW66VeRaSSMNAj0FAYCP9cxzTRZ1y3Gc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
